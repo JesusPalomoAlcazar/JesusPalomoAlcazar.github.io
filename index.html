@@ -1,578 +1,252 @@
-﻿<head>
-
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1,requiresActiveX=true">
-    
-    
-	<title> CV Jesus Palomo </title>
-	<meta name="description" content=" add description  ... ">
-    
-    <!-- /// Favicons ////////  -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144-precomposed.png">
-    <link rel="shortcut icon" href="favicon.png">
-
-
-	<!-- /// Template CSS ////////  -->
-    <link rel="stylesheet" href="layout/css/base.css">
-    <link rel="stylesheet" href="layout/css/grid.css">
-    <link rel="stylesheet" href="layout/css/elements.css">
-    <link rel="stylesheet" href="layout/css/layout.css">
-
-	<!-- /// JS Plugins CSS ////////  -->
-    <link rel="stylesheet" href="layout/js/bxslider/jquery.bxslider.css">
-    <link rel="stylesheet" href="layout/js/magnificpopup/magnific-popup.css">
-    
-    <!-- /// Google Fonts ////////  -->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
-    
-    <!-- /// FontAwesome Icons 4.0.3 ////////  -->
-	<link rel="stylesheet" href="layout/css/fontawesome/font-awesome.min.css">
-    
-	<link rel="stylesheet" href="layout/css/skins/default.css" id="cv-skin">
-	<link rel="stylesheet" href="layout/js/switcher/switcher.css">
-
-    <!-- /// Modernizr ////////  -->
-    <script src="layout/js/modernizr-2.6.2.min.js"></script>
- 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jesús Palomo Alcázar · CV · Analista y programador C# y Mirth</title>
+<meta name="description" content="Currículum de Jesús Palomo Alcázar: más de 10 años desarrollando aplicaciones en C#, .NET, SQL Server y Android. Formación reciente en IA generativa. Actualmente analista y programador de Mirth y C# en software para hospitales.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f5f6f3;--card:#fff;--ink:#14212d;--muted:#54636f;--side:#0f1e2e;--side-ink:#e8eef2;--side-muted:#9db0be;--accent:#0b7a78;--mark:#e0a21b;--line:#d7ddd9;
+--display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;--body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1rem/1.65 var(--body)}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--mark);outline-offset:3px}
+.layout{display:grid;grid-template-columns:20rem 1fr;min-height:100vh}
+aside{background:var(--side);color:var(--side-ink);padding:2.5rem 1.75rem;position:sticky;top:0;height:100vh;overflow:auto}
+aside a{color:var(--side-ink)}
+.avatar{width:96px;height:96px;border-radius:50%;border:3px solid var(--mark);object-fit:cover;display:block;margin-bottom:1.25rem}
+aside h1{font:800 2.1rem/1 var(--display);letter-spacing:-.02em;margin:0 0 .6rem}
+.role{font:500 1.05rem/1.35 var(--display);color:var(--mark);margin:0 0 1.5rem}
+aside h2{font:800 1rem var(--display);margin:2rem 0 .7rem;padding-top:1.2rem;border-top:1px solid #243a4f}
+.contact{list-style:none;padding:0;margin:0;word-break:break-word}
+.contact li{margin-bottom:.45rem}
+.btn{display:inline-block;margin-top:1.25rem;padding:.6rem 1rem;background:var(--mark);color:#14212d!important;font-weight:500;text-decoration:none;border-radius:.3rem}
+.btn:hover{filter:brightness(1.08)}
+.skill{margin-bottom:.8rem;font-size:.92rem}
+.skill span{display:flex;justify-content:space-between;gap:.5rem}
+.skill small{color:var(--side-muted)}
+.bar{height:6px;background:#243a4f;border-radius:3px;margin-top:.3rem;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--mark)}
+.plain{list-style:none;padding:0;margin:0;font-size:.92rem}
+.plain li{margin-bottom:.3rem}
+main{padding:0 clamp(1.5rem,5vw,4rem) 4rem;max-width:56rem}
+main h2{font:800 1.7rem/1.1 var(--display);letter-spacing:-.02em;margin:3rem 0 1.4rem}
+main h2{scroll-margin-top:4.5rem}
+.toc{position:sticky;top:0;z-index:5;display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;padding:1.1rem 0 .9rem;margin-bottom:.5rem;background:var(--paper);border-bottom:1px solid var(--line)}
+.toc a{color:var(--ink);font-weight:500;text-decoration:none;padding:.15rem 0;border-bottom:2px solid transparent}
+.toc a:hover{color:var(--accent);border-bottom-color:var(--mark)}
+.toc + h2{margin-top:1.8rem}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.intro p{max-width:40rem;margin:0 0 1rem}
+.intro .lead{font:500 1.35rem/1.4 var(--display)}
+.job{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--line);padding:1.25rem 1.5rem;margin-bottom:1.1rem;border-radius:.3rem}
+.job.now{border-left-color:var(--mark)}
+.job.now{background:linear-gradient(180deg,#fff8e6,#fff 60%)}
+.job .hl{font:500 1.1rem/1.4 var(--display);color:var(--ink)}
+.tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.9rem}
+.tags span{font-size:.85rem;padding:.2rem .65rem;border:1px solid var(--accent);color:var(--accent);border-radius:999px;background:#fff}
+.job .when{color:var(--muted);font-size:.9rem}
+.job h3{font:800 1.2rem/1.25 var(--display);margin:.15rem 0 0}
+.job .co{color:var(--accent);font-weight:500;margin:0 0 .6rem}
+.job p{margin:0 0 .6rem;max-width:42rem}
+.job ul{margin:0;padding-left:1.2rem}
+.job li{margin-bottom:.25rem}
+.ai-sum{font:500 1.1rem/1.4 var(--display);max-width:40rem;margin:0 0 1.1rem}
+.ai-list{list-style:none;margin:0 0 1rem;padding:0;background:var(--card);border:1px solid var(--line);border-radius:.3rem}
+.ai-list li{display:grid;grid-template-columns:1fr auto;gap:.2rem 1rem;padding:.8rem 1.1rem;border-bottom:1px solid var(--line)}
+.ai-list li:last-child{border-bottom:0}
+.ai-list b{font-weight:500}
+.ai-list small{color:var(--muted);grid-column:1}
+.ai-list a{grid-row:1/3;grid-column:2;align-self:center;font-size:.9rem}
+.course{display:flex;gap:1rem;align-items:center;margin-bottom:1rem}
+.course img{width:72px;height:72px;object-fit:contain;flex:none}
+.course b{display:block}
+.edu li{margin-bottom:.6rem}
+@media (max-width:60rem){.layout{display:block}aside{position:static;height:auto}.toc{display:none}main{padding-top:2rem}}
+@media print{
+ body{font-size:10.5pt}.layout{display:block}
+ aside{position:static;height:auto;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ .btn,.toc{display:none}.job{break-inside:avoid}
+}
+</style>
 </head>
 <body>
+<div class="layout">
+<aside>
+  <img class="avatar" src="content/140x140.png" alt="Foto de Jesús Palomo Alcázar" onerror="this.style.display='none'">
+  <h1>Jesús Palomo Alcázar</h1>
+  <p class="role">Analista y programador de Mirth y C#</p>
 
-	<!-- read style switcher set settings for layout and skin -->
-	<script src="layout/js/switcher/readcookies.js"></script>
-	
-	<div id="wrap">
-	
-		<div id="header">
-        
-		<!-- /// HEADER  //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <h2>Contacto</h2>
+  <ul class="contact">
+    <li><a href="mailto:jesusm.palomo@gmail.com">jesusm.palomo@gmail.com</a></li>
+    <li><a href="tel:+34600676853">(+34) 600 67 68 53</a></li>
+    <li><a href="https://www.linkedin.com/in/jesuspalomoalcazar/">LinkedIn</a></li>
+    <li><a href="https://github.com/JesusPalomoAlcazar">GitHub</a></li>
+  </ul>
+  <a class="btn" href="CurriculumJesusPalomo.pdf" download>Descargar CV en PDF</a>
 
-			<div class="row cv-section">
-                <div class="span9">
-                    
-                    <div class="cv-section-title">
-                        
-                        <img src="content/140x140.png" alt="">
-                        
-                        <h1>
-                            Jes&uacute;s Palomo Alc&aacute;zar 
-                            <small>Desarrollador de aplicaci&oacute;nes</small>
-                        </h1>
-                        
-                    </div><!-- end .cv-section-title -->
-                    
-                </div><!-- end .span9 -->
-                <div class="span3">
-                    
-                    <div class="cv-item">
-                        
-                        <div class="social-media fixed">
-                            
-                            <!-- <a href="https://www.facebook.com/jesus.palomoalcazar" class="facebook-icon social-icon">
-                                <i class="fa fa-facebook"></i>
-                            </a> -->
-                            <a href="https://www.linkedin.com/in/jesuspalomoalcazar/" class="linkedin-icon social-icon">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                        </div>
-                        
-                        <p class="last">
-                            <span class="hidden-tablet"><img alt="" src="mail.png" /> </span><a href="mailto:jesusm.palomo@gmail.com">jesusm.palomo@gmail.com</a>
-                            <br><span class="hidden-tablet"><img alt="" src="telefono.png" /> </span>(+34) 600 67 68 53
-                        </p>
-                        
-                    </div><!-- end .cv-item -->
-                    
-                </div><!-- end .span3 -->
-            </div><!-- end .cv-section -->	
+  <h2>Competencias</h2>
+  <div class="skill"><span>Mirth 4.4.1 · HL7 <small>1 año</small></span><div class="bar"><i style="width:30%"></i></div></div>
+  <div class="skill"><span>C#.NET <small>Avanzado, +5 años</small></span><div class="bar"><i style="width:90%"></i></div></div>
+  <div class="skill"><span>SQL Server <small>Avanzado, +5 años</small></span><div class="bar"><i style="width:90%"></i></div></div>
+  <div class="skill"><span>MySQL <small>Avanzado, +5 años</small></span><div class="bar"><i style="width:85%"></i></div></div>
+  <div class="skill"><span>Android <small>Avanzado, +3 años</small></span><div class="bar"><i style="width:75%"></i></div></div>
+  <div class="skill"><span>SQLite <small>Avanzado, 2 años</small></span><div class="bar"><i style="width:65%"></i></div></div>
+  <div class="skill"><span>ASP.NET <small>Principiante, 1 año</small></span><div class="bar"><i style="width:30%"></i></div></div>
+  <div class="skill"><span>Objective-C <small>Principiante, 1 año</small></span><div class="bar"><i style="width:30%"></i></div></div>
 
-		<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <h2>Idiomas</h2>
+  <ul class="plain">
+    <li>Inglés: lectura B1 (documentación técnica), A2 general, preparando el B1</li>
+    <li>Francés: Bachillerato</li>
+  </ul>
+</aside>
 
-		</div><!-- end #header -->
-		<div id="content">
-		
-		<!-- /// CONTENT  /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<main>
+  <nav class="toc" aria-label="Secciones">
+    <a href="#experiencia">Experiencia</a>
+    <a href="#ia">Formación en IA</a>
+    <a href="#formacion">Formación complementaria</a>
+    <a href="#estudios">Estudios</a>
+  </nav>
 
-            <div class="row cv-section">
-                <div class="span3">
-                    
-                    <div class="cv-section-title">
-                        
-                        <h2>Como soy yo</h2>
-                        
-                    </div><!-- end .cv-section-title -->
-                    
-                </div><!-- end .span3 -->
-                <div class="span9">
-                    
-                    <div class="cv-item">
-                        
-                        <p>Voy a aprovechar estas líneas para escribir una breve reseña sobre cómo me veo yo. En el trabajo soy una persona muy constante e
-                        insistente, siempre busco la forma de conseguir que el trabajo salga lo mejor posible, no me gusta dejar nada para el final y 
-                        prefiero dar pequeños pasos para llegar a la meta, siempre sigo la teoría del "divide y vencerás", me gusta el trabajo en equipo donde
-                        cada integrante tenga su papel bien definido. En un equipo hay que valorar las aportaciones de cada miembro y la "lluvia de ideas" creo es la mejor manera.
-                        <br/>
-                        En el ámbito personal me considero una persona un poco tímida de inicio pero que coge la confianza rápidamente, no juzgo a los demás y respeto cada opinión y
-                        forma de ser, me considero que tengo los pies en la tierra, pienso las cosas antes de hacerlas pero me gusta afrontar nuevos retos.
-                        <br />
-                        Siempre me ha gustado la informática desde que llego a mi mano un spectrum allá con 11 años, algunas de mis aficiones es la electrónica y la naturaleza,
-                        y siempre que el trabajo me lo permite me gusta disfrutar de ella realizando rutas de senderismo, arborismo o el descenso de algún rio.
- </p>
-                        
-                    </div><!-- end .cv-item -->
-                    
-                </div><!-- end .span9 -->
-            </div><!-- end .cv-section -->
-            	
-            <div class="row cv-section">
-                <div class="span3">
-                    
-                    <div class="cv-section-title">
-                        
-                        <h2>Experiencia Laboral</h2>
-                        
-                    </div><!-- end .cv-section-title -->
-                    
-                </div><!-- end .span3 -->
-                <div class="span9">
-                    <div class="cv-item">
-                        
-                        <p class="period" style="background-color: #fdb020;">Octubre 2015 - Presente</p>
-                        
-                        <h3><strong>Programador COM / C#.net </strong></h3>
-                        <h4>Ofimatica TSS, Jaen</h4>
-                        
-                        <br>
-                        
-                        <p>Empresa lider en el desarrollo de software en la ciudad de Jaén, especializada en software para agencias de viaje, en ella desarrollo 
-						y mantengo los programas relacionados con el sector de la hosteleria, gestión y contabilidad.</p>
-                        
-                        <ul class="fill-circle">
-                            <li>Desarrollar y mantener la aplicaciónes relacionadas con el sector.</li>
-                        </ul>
-                        
-                    </div><!-- end .cv-item -->                    
-                    <div class="cv-item">
-                        
-                        <p class="period">Julio 2014 - Octubre 2015</p>
-                        
-                        <h3><strong>Programador web, Android e IOS </strong></h3>
-                        <h4>Autobuses Castillo, Jaen</h4>
-                        
-                        <br>
-                        
-                        <p>Esta empresa es la concesionaria actual de la explotación del transporte urbano en la ciudad de Jaén, en ella desarrolle varias
-                         aplicaciones internas, una web pública donde conocer las rutas y la posición de los buses y una aplicación móvil con código nativo
-                          para android e ios complementaria a la web.
-                          Al frente del departamento de informática estas son algunas funciones que desarrollo en esta empresa: </p>
-                        
-                        <ul class="fill-circle">
-                            <li>Desarrollar y mantener la aplicación interna de la empresa.</li>
-                            <li>Desarrollar las aplicaciones públicas (web y plataforma móvil). </li>
-                            <li>Implementar la red informática de la empresa, carente anteriormente.</li>
-                            <li>Administrar y mantener los servidores.</li>
-                            <li>Desarrollar una aplicación IOS, lenguaje desconocido anteriormente.</li>
-                        </ul>
-                        
-                    </div><!-- end .cv-item -->
-                    
-                    <div class="cv-item">
-                        
-                        <p class="period">Febrero 2013 - Junio 2014</p>
-                        
-                        <h3><strong>Programador web y Android</strong></h3>
-                        <h4>SolucionesNtic, Jaen</h4>
-                        
-                        <br>
-                        
-                        <p>En esta empresa desarrolle la página web pública, además de numerosas aplicaciones móviles para android, entre ellas destacan una aplicación de 
-                        bandos para los ayuntamientos y una aplicación para McDonalds donde cada restaurante puede publicar unas ofertas puntuales y muy agresivas para llamar
-                        a más clientes. Al frente del departamento de programación algunas de las tareas fueron: </p>
-                        
-                        <ul class="fill-circle">
-                            <li>Decidir como realizar las aplicaciones móviles.</li>
-                            <li>Mantener, configurar y reparar el servidor de la empresa.</li>
-                            <li>Reparación de impresoras para bancos y particulares.</li>
-                        </ul>
-                        
-                    </div><!-- end .cv-item -->
-                    
-                     <div class="cv-item">
-                        
-                        <p class="period">Junio 2012 - Septiembre 2012</p>
-                        
-                        <h3><strong>Programador Android</strong></h3>
-                        <h4>12 Code, Jaen</h4>
-                        
-                        <br>
-                        
-                        <p>Estas practicas las desarrolle a través del IMEFE (Instituto Municipal de Empleo y Formación Empresarial), como soy incapaz de estar en casa sin hacer 
-                        nada encontré este organismo que oferta empleo generalmente para menores de 30 años, y me dispuse ha enviar mi solicitud, salió una empresa que necesitaba
-                        un programador para realizar una aplicación, mi sorpresa y mis ganas de empezar aumentaron al saber que la aplicación era una plataforma móvil, para mi por
-                        aquel entonces desconocida, "un trabajo donde aprender cosas nuevas y de programación" debía de ser mío, rápidamente me prepare mi entrevista
-                        con la ayuda de una orientadora profesional del programa ANDALUCIA ORIENTA y conseguí el puesto. En el equipo de trabajo mis funciones fueron:</p>
-                        
-                        <ul class="fill-circle">
-                            <li>Definir una clase capaz de conectar a una base de datos SQLITE y definir las funciones para insertar, actualizar y eliminar.</li>
-                            <li>Conectar a un servidor XML, descargar los datos y procesarlos.</li>
-                            <li>Diseño de la pantalla de muestra de datos.</li>
-                            <li>Diseñar la aplicación siguiendo el MVC (Modelo-vista-controlador).</li>
-                        </ul>
-                        
-                    </div><!-- end .cv-item -->
-                    
-                    <div class="cv-item">
-                        
-                        <p class="period"> Abril 2011 - Diciembre 2011</p>
-                        
-                        <h3><strong>Programador Web</strong></h3>
-                        <h4>White Phone Telecom, Torredonjimeno</h4>
-                        
-                        <br>
-                        
-                       <p>Empresa dedicada a la reventa de telefonía, a cargo del departamento de informática y responsable de dos personas, mis funciones en ella fueron:</p>
-                        
-                        <ul class="fill-circle">
-                            <li>Definir y asignar el trabajo del equipo de programación así como definir los tiempos de entrega y pruebas del proyecto.</li>
-                            <li>Realizar listados con conexiones de base de datos de asterisk y elastix.</li>
-                            <li>Diseñar y programar diferentes web para clientes.</li>
-                            <li>Mantener el servidor de la empresa.</li>
-                            <li>Realizar procesos automáticos para la recarga de las sim de las líneas siguiendo patrones o probar y desconectar una sim si no funcionaba.</li>
-                        </ul>
+  <h2 id="experiencia">Experiencia laboral</h2>
 
-                        
-                    </div><!-- end .cv-item -->
-                    
-                    <div class="cv-item">
-                        
-                        <p class="period"> Enero 2009 - Abril 2010</p>
-                        
-                        <h3><strong>Programador Windows</strong></h3>
-                        <h4>Cristaleria - Marqueteria Ruteña, rute (Cordoba)</h4>
-                        
-                        <br>
-                        
-                        <p>Empresa dedicada al cristal y la marqueteria. Mi funciones en ella fueron:</p>
-                        
-                        <ul class="fill-circle">
-                            <li>Realizar un programa multiusuario y en red para gestionar todo lo relacionado con la empresa, control de stock, nóminas, corte de molduras y cristal, almacén, etc.</li>
-                            <li>Crear una red de ordenadores.</li>
-                            
-                        </ul>
-                        
-                    </div><!-- end .cv-item -->
-                    
-                    <div class="cv-item">
-                        
-                        <p class="period"> 2007</p>
-                        
-                        <h3><strong>Programador</strong></h3>
-                        <h4>Cutter, Mancha Real</h4>
-                        
-                        <br>
-                        
-                        <p>Practicas propias de la formación academica</p>
-                        
-                        <ul class="fill-circle">
-                            <li>Administrar las imágenes de la web de la empresa con photoshop.</li>
-                            <li>Realizar informes en Crystal Report con base de datos de Oracle.</li>
-                            
-                        </ul>
-                        
-                    </div><!-- end .cv-item -->
-                </div><!-- end .span9 -->
-            </div><!-- end .cv-section -->
-            
-            <div class="row cv-section">
-                <div class="span3">
-                    
-                    <div class="cv-section-title">
-                        
-                        <h2>Competencias</h2>
-                        
-                    </div><!-- end .cv-section-title -->
-                    
-                </div><!-- end .span3 -->
-               <div class="span12">
-                    
-                    <ul class="portfolio-items fixed">
-                        <li class="baseDatos">
-                        <div class="pie-chart" data-percent="90" data-barColor="#fdb020" data-trackColor="#e0e0e0" data-lineWidth="2" data-barSize="100">
-                        
-                            <div class="pie-chart-percent">
-                                <span></span>
-                                %
-                            </div><!-- end .pie-chart-percent -->
-                        </div>
-                        <h3><strong>SQL Server</strong></h3>
-                            <p>Avanzado,+5 a&ntilde;os</p>
-                        </li>
-                        
-                        <li class="baseDatos">
-                        <div class="pie-chart" data-percent="85" data-barColor="#fdb020" data-trackColor="#e0e0e0" data-lineWidth="2" data-barSize="100">
-                        
-                            <div class="pie-chart-percent">
-                                <span></span>
-                                %
-                            </div><!-- end .pie-chart-percent -->
-                        </div>
-                        <h3><strong>SQLite</strong></h3>
-                            <p>Avanzado, 2 a&ntilde;os</p>
-                        </li>
-                        
-                        <li class="baseDatos">
-                        <div class="pie-chart" data-percent="90" data-barColor="#fdb020" data-trackColor="#e0e0e0" data-lineWidth="2" data-barSize="100">
-                        
-                            <div class="pie-chart-percent">
-                                <span></span>
-                                %
-                            </div><!-- end .pie-chart-percent -->
-                        </div>
-                        <h3><strong>MySQL</strong></h3>
-                            <p>Advanced, +5 a&ntilde;os</p>
-                        </li>
+  <article class="job now">
+    <span class="when">2025 – Actualidad</span>
+    <h3>Analista y programador de Mirth y C#</h3>
+    <p class="co">Metaenlace - Futurs</p>
+    <p class="hl">Software para hospitales públicos y privados, e intercambio de historias clínicas entre programas del sector con HL7.</p>
+    <ul>
+      <li><b>Análisis de PBI</b> (elementos del backlog) para el desarrollo y mantenimiento del software de la aplicación hospitalaria.</li>
+      <li><b>Canales de Mirth (4.4.1):</b> analizo y creo los canales que traspasan las historias clínicas de los pacientes entre programas del sector, mediante mensajes <b>HL7</b> estándar.</li>
+      <li>Desarrollo en <b>C#</b> sobre una aplicación en uso real en centros sanitarios.</li>
+    </ul>
+    <div class="tags"><span>Mirth 4.4.1</span><span>HL7</span><span>C#</span><span>Análisis funcional</span><span>Sector sanitario</span></div>
+  </article>
 
-                         <li class="lenguaje">
-                        <div class="pie-chart" data-percent="20" data-barColor="#fdb020" data-trackColor="#e0e0e0" data-lineWidth="2" data-barSize="100">
-                        
-                            <div class="pie-chart-percent">
-                                <span></span>
-                                %
-                            </div><!-- end .pie-chart-percent -->
-                        </div>
-                        <h3><strong>ASP.NET</strong></h3>
-                            <p>Principiante, 1 a&ntilde;o</p>
-                        </li>                        
-                        
-                        <li class="lenguaje">
-                        <div class="pie-chart" data-percent="60" data-barColor="#fdb020" data-trackColor="#e0e0e0" data-lineWidth="2" data-barSize="100">
-                        
-                            <div class="pie-chart-percent">
-                                <span></span>
-                                %
-                            </div><!-- end .pie-chart-percent -->
-                        </div>
-                        <h3><strong>C#.NET</strong></h3>
-                            <p>Avanzado, +5 a&ntilde;os</p>
-                        </li>
-                        
-                         <li class="lenguaje">
-                        <div class="pie-chart" data-percent="70" data-barColor="#fdb020" data-trackColor="#e0e0e0" data-lineWidth="2" data-barSize="100">
-                        
-                            <div class="pie-chart-percent">
-                                <span></span>
-                                %
-                            </div><!-- end .pie-chart-percent -->
-                        </div>
-                        <h3><strong>Android</strong></h3>
-                            <p>Avanzado, +3 a&ntilde;os</p>
-                        </li>
-                        
-                         <li class="lenguaje">
-                        <div class="pie-chart" data-percent="20" data-barColor="#fdb020" data-trackColor="#e0e0e0" data-lineWidth="2" data-barSize="100">
-                        
-                            <div class="pie-chart-percent">
-                                <span></span>
-                                %
-                            </div><!-- end .pie-chart-percent -->
-                        </div>
-                        <h3><strong>Objetive-C</strong></h3>
-                            <p>Principiante, 1 a&ntilde;o</p>
-                        </li>
-                    </ul>
-                    
-                </div><!-- end .span12 -->
-            </div><!-- end .cv-section -->
-            
-            
-             <div class="row cv-section">
-            	<div class="span3">
-                
-                	<div class="cv-section-title">
-                    	
-                        <h2>Formación Complementaria</h2>
-                        
-                    </div><!-- end .cv-section-title -->
-                    
-                </div><!-- end .span3 -->
-                <div class="span9">
+  <article class="job">
+    <span class="when">Octubre 2015 – 2025</span>
+    <h3>Programador COM / C#.NET</h3>
+    <p class="co">Ofimática TSS, Jaén</p>
+    <p>Empresa líder en desarrollo de software en Jaén, especializada en programas para agencias de viaje. Desarrollé y mantuve las aplicaciones de hostelería, gestión y contabilidad.</p>
+  </article>
 
-                      <div class="cv-item">
-                    	
-                        <h3><strong>Desarrollo de aplicaciones .NET. </strong></h3>
-                        <h4>Novasoft. 2014.</h4>
-                     
-                        	<ul class="fill-circle">
-	                        <li>Programacion en visual Studio de C# y ASP.NET</li>
-							</ul>   
-                    </div><!-- end .cv-item -->    
+  <article class="job">
+    <span class="when">Julio 2014 – Octubre 2015</span>
+    <h3>Programador web, Android e iOS</h3>
+    <p class="co">Autobuses Castillo, Jaén</p>
+    <p>Concesionaria del transporte urbano de Jaén. Al frente del departamento de informática:</p>
+    <ul>
+      <li>Desarrollé y mantuve la aplicación interna de la empresa.</li>
+      <li>Creé la web pública con rutas y posición de los autobuses, y una app móvil nativa para Android e iOS (Objective-C, un lenguaje nuevo para mí).</li>
+      <li>Implanté la red informática de la empresa, que no existía, y administré los servidores.</li>
+    </ul>
+  </article>
 
-			<div class="cv-item">
-                    	<table>
-					<tr>
-					<td>
-                        <h3><strong>SOLID y Patrones de diseño </strong></h3>
-                        <h4>OpenWebinar. 2022.</h4>
-                     
-                        	<ul class="fill-circle">
-	                        <li>Curso de aprendizaje de los diferentes patrones de diseño y cuando ponerlos en practica</li>
-						</ul>
-					</td>
-					<td>
-  					<img src="content/SOLID.png" alt="">
-					</td>
-					</tr>
-					</table>
-              </div><!-- end .cv-item -->    
-			
+  <article class="job">
+    <span class="when">Febrero 2013 – Junio 2014</span>
+    <h3>Programador web y Android</h3>
+    <p class="co">Soluciones NTIC, Jaén</p>
+    <p>Desarrollé la web pública y numerosas apps Android, entre ellas una de bandos para ayuntamientos y otra para McDonald’s con ofertas puntuales por restaurante. Al frente de programación:</p>
+    <ul>
+      <li>Decidí cómo realizar las aplicaciones móviles.</li>
+      <li>Mantuve, configuré y reparé el servidor de la empresa.</li>
+    </ul>
+  </article>
 
-			<div class="cv-item">
-                    	
-                        <table>
-					<tr>
-					<td>
-                        <h3><strong>Fundamentos de Arquitectura limpia con .NET </strong></h3>
-                        <h4>OpenWebinar. 2022.</h4>
-                     
-                        	<ul class="fill-circle">
-	                        <li>Curso de fundamentos de arquitectura limpia en .net </li>
-						</ul>
-					</td>
-					<td>
-  					<img src="content/Arquitectura.png" alt="">
-					</td>
-					</tr>
-					</table> 
-                    </div><!-- end .cv-item -->                   
-                </div><!-- end .span9 -->
-            </div><!-- end .cv-section -->
-            
-            <div class="row cv-section">
-            	<div class="span3">
-                
-                	<div class="cv-section-title">
-                    	
-                        <h2>Formación Academica</h2>
-                        
-                    </div><!-- end .cv-section-title -->
-                    
-                </div><!-- end .span3 -->
-                <div class="span9">
-                
-                	<div class="cv-item">             	
-                        <h3><strong>Técnico Superior en Desarrollo de Aplicaciones Informáticas. </strong></h3>
-                        <h4>I.E.S las fuentezuelas. Jaén. 2005 - 2007.</h4>     
-                    </div><!-- end .cv-item -->
+  <article class="job">
+    <span class="when">Junio – Septiembre 2012</span>
+    <h3>Programador Android</h3>
+    <p class="co">12 Code, Jaén (IMEFE)</p>
+    <ul>
+      <li>Clase de acceso a SQLite con inserción, actualización y borrado.</li>
+      <li>Descarga y procesado de datos desde un servidor XML.</li>
+      <li>Diseño de la pantalla de datos y de la app con el patrón MVC.</li>
+    </ul>
+  </article>
 
-                 	<div class="cv-item">             	
-                        <h3><strong>Selectividad </strong></h3>
-                        <h4>Universidad de Jaén 2004.</h4>     
-                    </div><!-- end .cv-item -->
-                     
-                 	<div class="cv-item">             	
-                        <h3><strong>Bachillerato </strong></h3>
-                        <h4>Colegio Cristo Rey (Jaén) 2002 - 2004.</h4>     
-                    </div><!-- end .cv-item -->
-                                       
-                </div><!-- end .span9 -->
-            </div><!-- end .cv-section -->
+  <article class="job">
+    <span class="when">Abril – Diciembre 2011</span>
+    <h3>Programador web</h3>
+    <p class="co">White Phone Telecom, Torredonjimeno</p>
+    <p>Responsable del departamento de informática y de dos personas.</p>
+    <ul>
+      <li>Asigné el trabajo del equipo y definí plazos de entrega y pruebas.</li>
+      <li>Listados con bases de datos de Asterisk y Elastix, y webs para clientes.</li>
+      <li>Procesos automáticos de recarga y comprobación de SIM, y mantenimiento del servidor.</li>
+    </ul>
+  </article>
 
-			<div class="row cv-section">
-            	<div class="span3">
-                
-                	<div class="cv-section-title">
-                    	
-                        <h2>Otros datos de interes</h2>
-                        
-                    </div><!-- end .cv-section-title -->
-                    
-                </div><!-- end .span3 -->
-             	<div class="span9">
-             		<ul class="fill-circle">
-                       <li>Al finalizar mis estudios de desarrollador de aplicaciones informáticas el profesorado me pidió realizar un programa de aprendizaje para las futuras promociones sobre las políticas del disco duro (FIFO, ROUND ROBIN).</li>
-			<li>Poseo conocimientos sobre administración de sistemas informáticos y montaje de redes.</li>
-                        <li>Poseo conocimientos de instalación y configuración de sistemas CMS (Drupal, Wordpress, Joomla, Opencart)</li>
-					</ul>                    
-             	</div><!-- end .span9 -->
-            </div><!-- end .cv-section -->    
-		<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <article class="job">
+    <span class="when">Enero 2009 – Abril 2010</span>
+    <h3>Programador Windows</h3>
+    <p class="co">Cristalería - Marquetería Ruteña, Rute (Córdoba)</p>
+    <ul>
+      <li>Programa multiusuario en red para toda la gestión: stock, nóminas, corte de molduras y cristal, almacén.</li>
+      <li>Creación de la red de ordenadores.</li>
+    </ul>
+  </article>
 
-		</div><!-- end #content -->
-		<div id="footer">
-		
-		<!-- /// FOOTER     ///////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-			
-			 
-            
-		<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <article class="job">
+    <span class="when">2007</span>
+    <h3>Programador (prácticas)</h3>
+    <p class="co">Cutter, Mancha Real</p>
+    <ul>
+      <li>Gestión de imágenes de la web con Photoshop.</li>
+      <li>Informes en Crystal Reports sobre Oracle.</li>
+    </ul>
+  </article>
 
-		</div><!-- end #footer -->
-		
-	</div><!-- end #wrap -->
-    
-    <a id="back-to-top" href="#">
-    	<i class="fa fa-angle-up"></i>
-    </a>
-	
-	<!-- 
-	<a id="print" href="javascript:window.print()" title="Print the CV">
-        <i class="fa fa-print"></i>
-    </a>
-    	 -->
-    <a id="pdf" href="CurriculumJesusPalomo.pdf" title="Descarga mi curriculum">
-        <i class="fa fa-download"></i>
-    </a>
+  <h2 id="ia">Formación en IA generativa</h2>
+  <p class="ai-sum">97 horas entre octubre de 2025 y julio de 2026 aplicando la IA al desarrollo de software: 6 cursos de OpenWebinars y una jornada formativa de BIG school.</p>
+  <ul class="ai-list">
+    <li><b>Full Stack con IA integrada</b><small>4 h · 5 de julio de 2026 · FastAPI, Angular, chat, memoria y RAG</small><a href="https://openwebinars.net/cert/wKbj">Verificar</a></li>
+    <li><b>Agentes de IA Generativa</b><small>60 h · 4 de julio de 2026 · LangChain, LangGraph, memoria, RAG, MCP y sistemas multiagente</small><a href="https://openwebinars.net/cert/Lydw">Verificar</a></li>
+    <li><b>Integración Eficaz de APIs en IA Generativa</b><small>6 h · 28 de junio de 2026 · LangChain, salidas JSON, tools, MCP y RAG</small><a href="https://openwebinars.net/cert/GCo3">Verificar</a></li>
+    <li><b>Prompt Engineering para Desarrolladores</b><small>7 h · 20 de junio de 2026 · técnicas de prompting y LangSmith</small><a href="https://openwebinars.net/cert/LdUG">Verificar</a></li>
+    <li><b>Asistentes de código</b><small>7 h · 13 de junio de 2026 · GitHub Copilot, Cursor y Claude Code</small><a href="https://openwebinars.net/cert/khaE">Verificar</a></li>
+    <li><b>Fundamentos IA para Desarrolladores</b><small>7 h · 12 de junio de 2026 · LLM, Ollama con LangChain y proveedores de modelos</small><a href="https://openwebinars.net/cert/tBJc">Verificar</a></li>
+    <li><b>Iniciación al Desarrollo con IA</b><small>6 h · 26 de octubre de 2025 · BIG school · certificado de asistencia a las jornadas «Desarrollo con IA»</small></li>
+  </ul>
+  <div class="tags"><span>LangChain</span><span>LangGraph</span><span>RAG</span><span>MCP</span><span>FastAPI</span><span>Prompt engineering</span><span>Asistentes de código</span></div>
 
-    <!-- /// jQuery ////////  -->
-	<script src="layout/js/jquery-2.1.0.min.js"></script>
-  
-    <!-- /// ViewPort ////////  -->
-	<script src="layout/js/viewport/jquery.viewport.js"></script>
-    
-    <!-- /// Easing ////////  -->
-	<script src="layout/js/easing/jquery.easing.1.3.js"></script>
+  <h2 id="formacion">Formación complementaria</h2>
+  <ul class="ai-list">
+    <li><b>Test de aptitud .NET Core</b><small>OpenWebinars · 5 de noviembre de 2023 · nivel Medium I (intermedio)</small></li>
+    <li><b>Arquitectura limpia con .NET</b><small>5 h · 18 de septiembre de 2022 · capas, DDD, patrón repositorio y ejemplo con API REST en C#</small><a href="https://openwebinars.net/cert/d9dOa">Verificar</a></li>
+    <li><b>SOLID y patrones de diseño</b><small>8 h · 17 de septiembre de 2022 · SOLID, YAGNI, KISS, DRY, patrones GoF y antipatrones</small><a href="https://openwebinars.net/cert/7Ne2K">Verificar</a></li>
+    <li><b>Taller de patrón de diseño Estrategia con C#</b><small>1 h · 17 de septiembre de 2022</small><a href="https://openwebinars.net/cert/4nrwE">Verificar</a></li>
+    <li><b>Desarrollo de aplicaciones .NET</b><small>Novasoft · 2014 · C# y ASP.NET con Visual Studio</small></li>
+  </ul>
 
-    <!-- /// SimplePlaceholder ////////  -->
-	<script src="layout/js/simpleplaceholder/jquery.simpleplaceholder.js"></script>
+  <h2 id="estudios">Formación académica</h2>
+  <ul class="plain edu">
+    <li><b>Técnico Superior en Desarrollo de Aplicaciones Informáticas</b>, I.E.S. Las Fuentezuelas, Jaén (2005 – 2007)</li>
+    <li><b>Selectividad</b>, Universidad de Jaén (2004)</li>
+    <li><b>Bachillerato</b>, Colegio Cristo Rey, Jaén (2002 – 2004)</li>
+  </ul>
 
-    <!-- /// Fitvids ////////  -->
-    <script src="layout/js/fitvids/jquery.fitvids.js"></script>
-	
-    <!-- /// bxSlider ////////  -->
-	<script src="layout/js/bxslider/jquery.bxslider.min.js"></script>
-    
-   	<!-- /// Magnific Popup ////////  -->
-	<script src="layout/js/magnificpopup/jquery.magnific-popup.min.js"></script>
-    
-    <!-- /// Isotope ////////  -->
-	<script src="layout/js/isotope/imagesloaded.pkgd.min.js"></script>
-	<script src=/"_layout/js/isotope/isotope.pkgd.min.js"></script>
-    
-    <!-- /// Parallax ////////  -->
-	<script src="layout/js/parallax/jquery.parallax.min.js"></script>	
-	
-	<!-- /// EasyPieChart ////////  -->
-	<script src="layout/js/easypiechart/jquery.easypiechart.min.js"></script>
-    
-    <!-- /// Easy Tabs ////////  -->
-    <script src="layout/js/easytabs/jquery.easytabs.min.js"></script>	
-    
-    <!-- /// Form validate ////////  -->
-    <script src="layout/js/jqueryvalidate/jquery.validate.min.js"></script>
-    
-	<!-- /// Form submit ////////  -->
-    <script src="layout/js/jqueryform/jquery.form.min.js"></script>
-    
-    <!-- /// gMap ////////  -->
-	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-	<script src="layout/js/gmap/jquery.gmap.min.js"></script>
+  <section class="intro" aria-labelledby="como-soy">
+    <h2 id="como-soy">Cómo soy</h2>
+    <p class="lead">Constante, insistente y partidario de avanzar con pequeños pasos hasta llegar a la meta.</p>
+    <p>No dejo nada para el final: divido el problema y lo resuelvo por partes. Me gusta el trabajo en equipo con los papeles bien definidos, y soy tímido al principio pero cojo confianza rápido.</p>
+    <p>Me enganché a la informática con 11 años, con un Spectrum. Fuera del trabajo me muevo entre la electrónica y la naturaleza: senderismo, arborismo y descenso de ríos. Mi objetivo es llegar a Arquitecto de Software.</p>
+  </section>
 
-	<div class="switcher"></div>
-	<script src="layout/js/switcher/jquery_cookie.js"></script>
-	<script src="layout/js/switcher/switcher.js"></script>
-	
-	<!-- /// Custom JS ////////  -->
-	<script src="layout/js/plugins.js"></script>	
-	<script src="layout/js/scripts.js"></script>
-
+  <h2>Otros datos de interés</h2>
+  <ul>
+    <li>Al terminar el ciclo, el profesorado me pidió un programa de aprendizaje para futuras promociones sobre políticas de disco duro (FIFO y Round Robin).</li>
+    <li>Conocimientos de administración de sistemas y montaje de redes.</li>
+    <li>Instalación y configuración de CMS: Drupal, WordPress, Joomla y OpenCart.</li>
+  </ul>
+</main>
+</div>
 </body>
+</html>
