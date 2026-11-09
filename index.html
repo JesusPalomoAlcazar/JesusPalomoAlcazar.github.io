@@ -1,259 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Jesús Palomo Alcázar · CV · Desarrollador senior .NET</title>
-<meta name="description" content="Currículum de Jesús Palomo Alcázar: más de 10 años desarrollando aplicaciones en C#, .NET, SQL Server y Android. Formación reciente en IA generativa. Actualmente analista y programador de Mirth y C# en software para hospitales.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
-<style>
-:root{--paper:#f5f6f3;--card:#fff;--ink:#14212d;--muted:#54636f;--side:#0f1e2e;--side-ink:#e8eef2;--side-muted:#9db0be;--accent:#0b7a78;--mark:#e0a21b;--line:#d7ddd9;
---display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;--body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif}
-*{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);font:400 1rem/1.65 var(--body)}
-a{color:var(--accent);text-underline-offset:3px}
-a:focus-visible{outline:3px solid var(--mark);outline-offset:3px}
-.layout{display:grid;grid-template-columns:20rem 1fr;min-height:100vh}
-aside{background:var(--side);color:var(--side-ink);padding:2.5rem 1.75rem;position:sticky;top:0;height:100vh;overflow:auto}
-aside a{color:var(--side-ink)}
-.avatar{width:96px;height:96px;border-radius:50%;border:3px solid var(--mark);object-fit:cover;display:block;margin-bottom:1.25rem}
-aside h1{font:800 2.1rem/1 var(--display);letter-spacing:-.02em;margin:0 0 .6rem}
-.role{font:500 1.05rem/1.35 var(--display);color:var(--mark);margin:0 0 1.5rem}
-aside h2{font:800 1rem var(--display);margin:2rem 0 .7rem;padding-top:1.2rem;border-top:1px solid #243a4f}
-.contact{list-style:none;padding:0;margin:0;word-break:break-word}
-.contact li{margin-bottom:.45rem}
-.btn{display:inline-block;margin-top:1.25rem;padding:.6rem 1rem;background:var(--mark);color:#14212d!important;font-weight:500;text-decoration:none;border-radius:.3rem}
-.btn:hover{filter:brightness(1.08)}
-.skill{margin-bottom:.8rem;font-size:.92rem}
-.skill span{display:flex;justify-content:space-between;gap:.5rem}
-.skill small{color:var(--side-muted)}
-.bar{height:6px;background:#243a4f;border-radius:3px;margin-top:.3rem;overflow:hidden}
-.bar i{display:block;height:100%;background:var(--mark)}
-.plain{list-style:none;padding:0;margin:0;font-size:.92rem}
-.plain li{margin-bottom:.3rem}
-main{padding:0 clamp(1.5rem,5vw,4rem) 4rem;max-width:56rem}
-main h2{font:800 1.7rem/1.1 var(--display);letter-spacing:-.02em;margin:3rem 0 1.4rem}
-main h2{scroll-margin-top:4.5rem}
-.toc{position:sticky;top:0;z-index:5;display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;padding:1.1rem 0 .9rem;margin-bottom:.5rem;background:var(--paper);border-bottom:1px solid var(--line)}
-.toc a{color:var(--ink);font-weight:500;text-decoration:none;padding:.15rem 0;border-bottom:2px solid transparent}
-.toc a:hover{color:var(--accent);border-bottom-color:var(--mark)}
-.toc + h2{margin-top:1.8rem}
-html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-.intro p{max-width:40rem;margin:0 0 1rem}
-.intro .lead{font:500 1.35rem/1.4 var(--display)}
-.job{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--line);padding:1.25rem 1.5rem;margin-bottom:1.1rem;border-radius:.3rem}
-.job.now{border-left-color:var(--mark)}
-.job.now{background:linear-gradient(180deg,#fff8e6,#fff 60%)}
-.job .hl{font:500 1.1rem/1.4 var(--display);color:var(--ink)}
-.tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.9rem}
-.tags span{font-size:.85rem;padding:.2rem .65rem;border:1px solid var(--accent);color:var(--accent);border-radius:999px;background:#fff}
-.job .when{color:var(--muted);font-size:.9rem}
-.job h3{font:800 1.2rem/1.25 var(--display);margin:.15rem 0 0}
-.job .co{color:var(--accent);font-weight:500;margin:0 0 .6rem}
-.job p{margin:0 0 .6rem;max-width:42rem}
-.job ul{margin:0;padding-left:1.2rem}
-.job li{margin-bottom:.25rem}
-.ai-sum{font:500 1.1rem/1.4 var(--display);max-width:40rem;margin:0 0 1.1rem}
-.ai-list{list-style:none;margin:0 0 1rem;padding:0;background:var(--card);border:1px solid var(--line);border-radius:.3rem}
-.ai-list li{display:grid;grid-template-columns:1fr auto;gap:.2rem 1rem;padding:.8rem 1.1rem;border-bottom:1px solid var(--line)}
-.ai-list li:last-child{border-bottom:0}
-.ai-list b{font-weight:500}
-.ai-list small{color:var(--muted);grid-column:1}
-.ai-list a{grid-row:1/3;grid-column:2;align-self:center;font-size:.9rem}
-.course{display:flex;gap:1rem;align-items:center;margin-bottom:1rem}
-.course img{width:72px;height:72px;object-fit:contain;flex:none}
-.course b{display:block}
-.edu li{margin-bottom:.6rem}
-@media (max-width:60rem){.layout{display:block}aside{position:static;height:auto}.toc{display:none}main{padding-top:2rem}}
-@media print{
- body{font-size:10.5pt}.layout{display:block}
- aside{position:static;height:auto;-webkit-print-color-adjust:exact;print-color-adjust:exact}
- .btn,.toc{display:none}.job{break-inside:avoid}
-}
-</style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=IBM+Plex+Sans:wght@400;500\&display=swap" rel="stylesheet">
+<title>Jesús Palomo · Desarrollador de software</title>
+<meta name="description" content="Portafolio de Jesús Palomo: software con arquitectura limpia, proyectos propios, manuales y currículum.">
+<link rel="icon" href="assets/logo-jp-icono.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<div class="layout">
-<aside>
-  <img class="avatar" src="content/140x140.png" alt="Foto de Jesús Palomo Alcázar" onerror="this.style.display='none'">
-  <h1>Jesús Palomo Alcázar</h1>
-  <p class="role">Desarrollador senior .NET · C#, Mirth y HL7</p>
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html"><img src="assets/logo-jp-icono.svg" alt="">Jesús Palomo</a>
+  <nav class="main" aria-label="Principal"><a href="#proyectos">Proyectos</a><a href="#sobre-mi">Sobre mí</a><a href="cv.html">Currículum</a><a href="#contacto">Contacto</a></nav>
+</div></header>
 
-  <h2>Contacto</h2>
-  <ul class="contact">
-    <li><a href="mailto:jesusm.palomo@gmail.com">jesusm.palomo@gmail.com</a></li>
-    <li><a href="tel:+34600676853">(+34) 600 67 68 53</a></li>
-    <li><a href="https://www.linkedin.com/in/jesuspalomoalcazar/">LinkedIn</a></li>
-    <li><a href="https://github.com/JesusPalomoAlcazar">GitHub</a></li>
-  </ul>
-  <a class="btn" href="CurriculumJesusPalomo.pdf" download>Descargar CV en PDF</a>
+<div class="hero"><div class="wrap">
+  <img src="assets/logo-jp-icono.svg" alt="Logotipo JP">
+  <div>
+    <h1>Jesús Palomo</h1>
+    <p>Desarrollador de software. Diseño y construyo aplicaciones con arquitectura limpia, y aquí publico lo que creo.</p>
+    <a class="btn primary" href="#proyectos">Ver proyectos</a><a class="btn ghost" href="cv.html">Ver currículum</a>
+  </div>
+</div></div>
 
-  <h2>Competencias</h2>
-  <div class="skill"><span>Mirth 4.4.1 · HL7 <small>1 año</small></span><div class="bar"><i style="width:30%"></i></div></div>
-  <div class="skill"><span>C#.NET <small>Avanzado, +5 años</small></span><div class="bar"><i style="width:90%"></i></div></div>
-  <div class="skill"><span>SQL Server <small>Avanzado, +5 años</small></span><div class="bar"><i style="width:90%"></i></div></div>
-  <div class="skill"><span>MySQL <small>Avanzado, +5 años</small></span><div class="bar"><i style="width:85%"></i></div></div>
-  <div class="skill"><span>Android <small>Avanzado, +3 años</small></span><div class="bar"><i style="width:75%"></i></div></div>
-  <div class="skill"><span>SQLite <small>Avanzado, 2 años</small></span><div class="bar"><i style="width:65%"></i></div></div>
-  <div class="skill"><span>ASP.NET <small>Principiante, 1 año</small></span><div class="bar"><i style="width:30%"></i></div></div>
-  <div class="skill"><span>Objective-C <small>Principiante, 1 año</small></span><div class="bar"><i style="width:30%"></i></div></div>
-
-  <h2>Idiomas</h2>
-  <ul class="plain">
-    <li>Inglés: lectura B1 (documentación técnica), A2 general, preparando el B1</li>
-    <li>Francés: Bachillerato</li>
-  </ul>
-</aside>
-
-<main>
-  <nav class="toc" aria-label="Secciones">
-    <a href="#experiencia">Experiencia</a>
-    <a href="#ia">Formación en IA</a>
-    <a href="#formacion">Formación complementaria</a>
-    <a href="#estudios">Estudios</a>
-  </nav>
-
-  <h2 id="experiencia">Experiencia laboral</h2>
-
-  <article class="job now">
-    <span class="when">Junio 2025 – Actualidad</span>
-    <h3>Desarrollador senior .NET</h3>
-    <p class="co">MetaEnlace Sistemas de Información · cliente final: Futurs</p>
-    <p class="hl">Analista y programador de Mirth y C# en software para hospitales públicos y privados, e intercambio de historias clínicas entre programas del sector con HL7.</p>
-    <ul>
-      <li><b>Análisis de PBI</b> (elementos del backlog) para el desarrollo y mantenimiento del software de la aplicación hospitalaria.</li>
-      <li><b>Canales de Mirth (4.4.1):</b> analizo y creo los canales que traspasan los datos de las historias clínicas de los pacientes entre programas del sector, mediante mensajes <b>HL7</b> estándar.</li>
-      <li>Desarrollo en <b>C#</b> sobre una aplicación en uso real en centros sanitarios.</li>
-    </ul>
-    <div class="tags"><span>Mirth 4.4.1</span><span>HL7</span><span>C#</span><span>Análisis funcional</span><span>Sector sanitario</span></div>
-  </article>
-
-  <article class="job">
-    <span class="when">Noviembre 2015 – Junio 2025</span>
-    <h3>Programador de software</h3>
-    <p class="co">Ofimática, Jaén</p>
-    <p>Desarrollo y mantenimiento de programas de turismo, gestión y contabilidad.</p>
-    <ul>
-      <li>Análisis de nuevas integraciones basadas en .NET.</li>
-      <li><b>Scrum Master</b> del equipo de desarrollo.</li>
-      <li>Formación de alumnos en prácticas de diversos organismos públicos de educación.</li>
-    </ul>
-  </article>
-
-  <article class="job">
-    <span class="when">Julio 2014 – Noviembre 2015</span>
-    <h3>Programador web, Android e iOS</h3>
-    <p class="co">Autobuses Castillo (Urbanos Jaén), Jaén</p>
-    <p>Concesionaria del transporte urbano de Jaén. Al frente del departamento de informática:</p>
-    <ul>
-      <li>Programas internos de la empresa: control de stock, taller, gestión de cuentas, vacaciones y nóminas.</li>
-      <li>Plataforma para el usuario del transporte urbano con la posición de los autobuses: página web y app móvil nativa para Android e iOS (Objective-C, un lenguaje nuevo para mí).</li>
-      <li>Implantación de la red informática de la empresa, que no existía, y administración de los servidores.</li>
-    </ul>
-  </article>
-
-  <article class="job">
-    <span class="when">Febrero 2013 – Junio 2014</span>
-    <h3>Programador web y Android</h3>
-    <p class="co">Soluciones NTIC, Jaén</p>
-    <p>Desarrollé varias páginas web y aplicaciones móviles, entre ellas una de bandos para ayuntamientos y otra para McDonald’s donde cada restaurante publica ofertas para atraer público o dar salida a excedentes. Al frente de programación:</p>
-    <ul>
-      <li>Decidí cómo realizar las aplicaciones móviles.</li>
-      <li>Mantuve, configuré y reparé el servidor de la empresa.</li>
-    </ul>
-  </article>
-
-  <article class="job">
-    <span class="when">Abril – Agosto 2012</span>
-    <h3>Programador Android</h3>
-    <p class="co">12 Code, Jaén</p>
-    <p>Aplicación Android de venta de material informático.</p>
-    <ul>
-      <li>Clase de acceso a SQLite con inserción, actualización y borrado.</li>
-      <li>Descarga y procesado de datos desde un servidor XML.</li>
-      <li>Diseño de la pantalla de datos y de la app con el patrón MVC.</li>
-    </ul>
-  </article>
-
-  <article class="job">
-    <span class="when">Marzo – Diciembre 2011</span>
-    <h3>Programador web</h3>
-    <p class="co">Whitephone Telecom, Jaén</p>
-    <p>Proyecto interno de una empresa de comunicaciones de voz IP: programa online para gestionar las líneas de los clientes.</p>
-    <ul>
-      <li>Gestión del cobro según la duración de las llamadas, recarga automática de líneas sin saldo y mantenimiento de líneas, clientes y usuarios.</li>
-      <li>Detección de líneas con fallos de voz y cambio automático a otra.</li>
-      <li>Responsable del departamento de informática y de dos personas, con asignación del trabajo, plazos de entrega y pruebas.</li>
-    </ul>
-  </article>
-
-  <article class="job">
-    <span class="when">Enero 2009 – Marzo 2010</span>
-    <h3>Programador Windows</h3>
-    <p class="co">Cristalería Ruteña, Rute (Córdoba)</p>
-    <ul>
-      <li>Programa de escritorio multiusuario en red para la gestión interna: personal, nóminas, almacén, clientes y optimización del corte de cristal.</li>
-      <li>Creación de la red de ordenadores.</li>
-    </ul>
-  </article>
-
-  <article class="job">
-    <span class="when">2008</span>
-    <h3>Programador (prácticas)</h3>
-    <p class="co">Bittex Soluciones, Granada · Cutter, Mancha Real</p>
-    <ul>
-      <li>Bittex (programa EPES, sep.–dic. 2008): página web para el alquiler de coches de una empresa de Granada.</li>
-      <li>Cutter (prácticas del ciclo formativo, mayo–jun. 2008): reportes en Oracle y actualización de la página web.</li>
-    </ul>
-  </article>
-
-  <h2 id="ia">Formación en IA generativa</h2>
-  <p class="ai-sum">97 horas entre octubre de 2025 y julio de 2026 aplicando la IA al desarrollo de software: 6 cursos de OpenWebinars y una jornada formativa de BIG school.</p>
-  <ul class="ai-list">
-    <li><b>Full Stack con IA integrada</b><small>4 h · 5 de julio de 2026 · FastAPI, Angular, chat, memoria y RAG</small><a href="https://openwebinars.net/cert/wKbj">Verificar</a></li>
-    <li><b>Agentes de IA Generativa</b><small>60 h · 4 de julio de 2026 · LangChain, LangGraph, memoria, RAG, MCP y sistemas multiagente</small><a href="https://openwebinars.net/cert/Lydw">Verificar</a></li>
-    <li><b>Integración Eficaz de APIs en IA Generativa</b><small>6 h · 28 de junio de 2026 · LangChain, salidas JSON, tools, MCP y RAG</small><a href="https://openwebinars.net/cert/GCo3">Verificar</a></li>
-    <li><b>Prompt Engineering para Desarrolladores</b><small>7 h · 20 de junio de 2026 · técnicas de prompting y LangSmith</small><a href="https://openwebinars.net/cert/LdUG">Verificar</a></li>
-    <li><b>Asistentes de código</b><small>7 h · 13 de junio de 2026 · GitHub Copilot, Cursor y Claude Code</small><a href="https://openwebinars.net/cert/khaE">Verificar</a></li>
-    <li><b>Fundamentos IA para Desarrolladores</b><small>7 h · 12 de junio de 2026 · LLM, Ollama con LangChain y proveedores de modelos</small><a href="https://openwebinars.net/cert/tBJc">Verificar</a></li>
-    <li><b>Iniciación al Desarrollo con IA</b><small>6 h · 26 de octubre de 2025 · BIG school · certificado de asistencia a las jornadas «Desarrollo con IA»</small></li>
-  </ul>
-  <div class="tags"><span>LangChain</span><span>LangGraph</span><span>RAG</span><span>MCP</span><span>FastAPI</span><span>Prompt engineering</span><span>Asistentes de código</span></div>
-
-  <h2 id="formacion">Formación complementaria</h2>
-  <ul class="ai-list">
-    <li><b>Test de aptitud .NET Core</b><small>OpenWebinars · 5 de noviembre de 2023 · nivel Medium I (intermedio)</small></li>
-    <li><b>Arquitectura limpia con .NET</b><small>5 h · 18 de septiembre de 2022 · capas, DDD, patrón repositorio y ejemplo con API REST en C#</small><a href="https://openwebinars.net/cert/d9dOa">Verificar</a></li>
-    <li><b>SOLID y patrones de diseño</b><small>8 h · 17 de septiembre de 2022 · SOLID, YAGNI, KISS, DRY, patrones GoF y antipatrones</small><a href="https://openwebinars.net/cert/7Ne2K">Verificar</a></li>
-    <li><b>Taller de patrón de diseño Estrategia con C#</b><small>1 h · 17 de septiembre de 2022</small><a href="https://openwebinars.net/cert/4nrwE">Verificar</a></li>
-    <li><b>Desarrollo de aplicaciones .NET</b><small>Novasoft · 2014 · C# y ASP.NET con Visual Studio</small></li>
-  </ul>
-
-  <h2 id="estudios">Formación académica</h2>
-  <ul class="plain edu">
-    <li><b>Técnico Superior en Desarrollo de Aplicaciones Informáticas</b>, I.E.S. Las Fuentezuelas, Jaén (2005 – 2007)</li>
-    <li><b>Selectividad</b>, Universidad de Jaén (2004)</li>
-    <li><b>Bachillerato</b>, Colegio Cristo Rey, Jaén (2002 – 2004)</li>
-  </ul>
-
-  <section class="intro" aria-labelledby="como-soy">
-    <h2 id="como-soy">Cómo soy</h2>
-    <p class="lead">Constante, insistente y partidario de avanzar con pequeños pasos hasta llegar a la meta.</p>
-    <p>No dejo nada para el final: divido el problema y lo resuelvo por partes. Me gusta el trabajo en equipo con los papeles bien definidos, y soy tímido al principio pero cojo confianza rápido.</p>
-    <p>Me enganché a la informática con 11 años, con un Spectrum. Fuera del trabajo me muevo entre la electrónica y la naturaleza: senderismo, arborismo y descenso de ríos. Mi objetivo es llegar a Arquitecto de Software.</p>
+<main class="wrap">
+  <section id="proyectos" aria-labelledby="h-pro">
+    <h2 id="h-pro">Proyectos</h2>
+    <div class="projects">
+    <article class="card">
+      <h3>CleanGuard <span class="badge">v1.0.1</span></h3>
+      <p>Utilidad de mantenimiento para Windows 11: limpieza de archivos, gestor de inicio y limpiador del registro con copia de seguridad y deshacer.</p>
+      <ul class="tags"><li>C#</li><li>.NET 10</li><li>Windows Forms</li><li>Arquitectura limpia</li></ul>
+      <a href="proyectos/cleanguard.html">Ver proyecto y registro de cambios →</a>
+      <p class="actions"><a href="https://github.com/JesusPalomoAlcazar/CleanGuard-releases/releases">Descargar</a> · <a href="manuales/CleanGuard-manual-v1.0.1.pdf">Manual (PDF)</a></p>
+    </article>
+    <article class="card">
+      <h3>Space Calculator <span class="badge">v1.0.0</span></h3>
+      <p>Calcula cuánto espacio ocupan los adjuntos de tus espacios y páginas de Confluence. Solo lectura, con token de API cifrado.</p>
+      <ul class="tags"><li>C#</li><li>.NET 10</li><li>Confluence</li><li>Windows</li></ul>
+      <a href="proyectos/space-calculator.html">Ver proyecto y registro de cambios →</a>
+      <p class="actions"><a href="https://github.com/JesusPalomoAlcazar/SpaceCalculator-releases/releases">Descargar</a> · <a href="manuales/SpaceCalculator-manual-v1.0.0.pdf">Manual (PDF)</a></p>
+    </article>
+    </div>
+    <p class="muted" style="margin-top:1.2rem">Habrá más proyectos. Cada uno tiene su ficha, su manual y su historial de versiones.</p>
   </section>
 
-  <h2>Otros datos de interés</h2>
-  <ul>
-    <li>Al terminar el ciclo, el profesorado me pidió un programa de aprendizaje para futuras promociones sobre políticas de disco duro (FIFO y Round Robin).</li>
-    <li>Metodologías: Scrum (Scrum Master del equipo de desarrollo en Ofimática).</li>
-    <li>Conocimientos de administración de sistemas y montaje de redes.</li>
-    <li>Instalación y configuración de CMS: Drupal, WordPress, Joomla y OpenCart.</li>
-  </ul>
+  <section id="sobre-mi" aria-labelledby="h-yo">
+    <h2 id="h-yo">Sobre mí</h2>
+    <p>Llevo más de 10 años desarrollando aplicaciones y hoy trabajo en software sanitario con C#, .NET y mensajes HL7. Me sigo formando en Arquitectura Limpia, SOLID, patrones de diseño e IA generativa aplicada al desarrollo.</p>
+    <p>Mi objetivo es llegar a Arquitecto de Software, y este sitio es donde reúno el software que construyo por el camino.</p>
+    <p><a href="cv.html">Ver mi currículum completo</a> · <a href="CurriculumJesusPalomo.pdf" download>Descargar en PDF</a></p>
+  </section>
+
+  <section id="contacto" aria-labelledby="h-con">
+    <h2 id="h-con">Contacto</h2>
+    <p><a href="mailto:jesusm.palomo@gmail.com">jesusm.palomo@gmail.com</a></p>
+    <p><a href="https://www.linkedin.com/in/jesuspalomoalcazar/">LinkedIn</a> · <a href="https://github.com/JesusPalomoAlcazar">GitHub</a></p>
+  </section>
 </main>
-</div>
+<footer><div class="wrap">© Jesús Palomo Alcázar</div></footer>
 </body>
 </html>

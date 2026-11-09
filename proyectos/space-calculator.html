@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<title>Space Calculator · Jesús Palomo</title>
+<meta name="description" content="Space Calculator: aplicación de escritorio para Windows que calcula el espacio que ocupan los adjuntos de tus espacios de Confluence. Descarga y manual.">
+<link rel="icon" href="../assets/logo-jp-icono.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="../index.html"><img src="../assets/logo-jp-icono.svg" alt="">Jesús Palomo</a>
+  <nav class="main" aria-label="Principal"><a href="../index.html#proyectos">Proyectos</a><a href="../index.html#sobre-mi">Sobre mí</a><a href="../cv.html">Currículum</a><a href="../index.html#contacto">Contacto</a></nav>
+</div></header>
+<main class="wrap">
+  <p class="crumb"><a href="../index.html#proyectos">← Proyectos</a></p>
+  <div class="title"><h1>Space Calculator</h1><span class="badge">v1.0.0</span></div>
+  <p style="margin-top:1rem;font-size:1.2rem" class="muted">Calcula cuánto espacio ocupan los adjuntos de tus espacios y páginas de Confluence, sin modificar nada.</p>
+  <p class="actions"><a class="btn primary" href="https://github.com/JesusPalomoAlcazar/SpaceCalculator-releases/releases">Descargar Space Calculator</a><a class="btn ghost" href="../manuales/SpaceCalculator-manual-v1.0.0.pdf">Manual de usuario (PDF)</a></p>
+
+  <figure class="shot"><img src="../assets/img/sc.png" alt="Pantalla Espacios y Almacenamiento de Space Calculator" width="1261" height="1016"><figcaption>Pantalla «Espacios y Almacenamiento» (datos de ejemplo).</figcaption></figure>
+
+  <section aria-labelledby="h-estado">
+    <h2 id="h-estado">Ficha</h2>
+    <dl class="facts">
+      <dt>Versión</dt><dd>1.0.0</dd>
+      <dt>Plataforma</dt><dd>Windows 10 y 11 · requiere .NET 10 Desktop Runtime</dd>
+      <dt>Descarga</dt><dd><a href="https://github.com/JesusPalomoAlcazar/SpaceCalculator-releases/releases">GitHub Releases</a></dd>
+      <dt>Manual</dt><dd><a href="../manuales/SpaceCalculator-manual-v1.0.0.pdf">Manual de usuario v1.0.0</a> · PDF, 13 páginas, noviembre 2026</dd>
+    </dl>
+  </section>
+
+  <section aria-labelledby="h-car">
+    <h2 id="h-car">Qué hace</h2>
+    <ul class="list">
+      <li><b>Almacenamiento por espacio y página:</b> se conecta a Confluence y calcula cuánto ocupan los adjuntos, con porcentaje sobre el espacio.</li>
+      <li><b>Búsqueda y filtros:</b> busca por espacio o página, oculta las páginas sin adjuntos y expande o colapsa todo.</li>
+      <li><b>Solo lectura:</b> consulta Confluence sin modificar ni borrar nada.</li>
+      <li><b>Conexión segura:</b> usa un token de API de Atlassian, que se guarda cifrado para tu usuario de Windows.</li>
+    </ul>
+    <p class="muted">Límites de la versión 1.0.0: hasta 200 espacios, 200 páginas por espacio y 200 adjuntos por página.</p>
+  </section>
+
+  <section aria-labelledby="h-cam">
+    <h2 id="h-cam">Registro de cambios</h2>
+    <ol class="changelog">
+      <li><span class="ver">v1.0.0</span><span class="date">Noviembre 2026</span>
+        <ul class="list"><li>Primera versión pública.</li></ul></li>
+      <!-- Plantilla para cada versión:
+      <li><span class="ver">v1.0.1</span><span class="date">DD/MM/AAAA</span>
+        <ul class="list"><li><b>Novedad:</b> ...</li><li><b>Mejora:</b> ...</li><li><b>Corrección:</b> ...</li></ul></li>
+      -->
+    </ol>
+  </section>
+</main>
+<footer><div class="wrap">© Jesús Palomo Alcázar</div></footer>
+</body>
+</html>
