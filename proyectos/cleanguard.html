@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
 <title>CleanGuard · Jesús Palomo</title>
-<meta name="description" content="CleanGuard: utilidad de mantenimiento para Windows 11 en C# y .NET con limpieza de archivos, gestor de inicio, limpiador del registro y actualizaciones. Descarga y manual.">
+<meta name="description" content="CleanGuard: utilidad de mantenimiento para Windows 11 en C# y .NET con limpieza de archivos, gestor de inicio, limpiador del registro, actualizaciones y reparación de Windows. Descarga y manual.">
 <link rel="icon" href="../assets/logo-jp-icono.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
@@ -14,20 +14,20 @@
 </div></header>
 <main class="wrap">
   <p class="crumb"><a href="../index.html#proyectos">← Proyectos</a></p>
-  <div class="title"><h1>CleanGuard</h1><span class="badge">v1.0.2</span></div>
-  <p style="margin-top:1rem;font-size:1.2rem" class="muted">Utilidad de mantenimiento para Windows 11: limpieza de archivos, gestor de inicio y limpiador del registro en una sola ventana.</p>
-  <p class="actions"><a class="btn primary" href="https://github.com/JesusPalomoAlcazar/CleanGuard-releases/releases">Descargar CleanGuard</a><a class="btn ghost" href="../manuales/CleanGuard-manual-v1.0.2.pdf">Manual de usuario (PDF)</a></p>
+  <div class="title"><h1>CleanGuard</h1><span class="badge">v1.1.0</span></div>
+  <p style="margin-top:1rem;font-size:1.2rem" class="muted">Utilidad de mantenimiento para Windows 11: limpieza de archivos, gestor de inicio, limpiador del registro, actualizaciones y reparación en una sola ventana.</p>
+  <p class="actions"><a class="btn primary" href="https://github.com/JesusPalomoAlcazar/CleanGuard-releases/releases">Descargar CleanGuard</a><a class="btn ghost" href="../manuales/CleanGuard-manual-v1.1.0.pdf">Manual de usuario (PDF)</a></p>
 
   <figure class="shot"><img src="../assets/img/cg.png" alt="Ventana principal de CleanGuard con la página Limpieza de archivos" width="1360" height="820"><figcaption>Ventana principal de CleanGuard.</figcaption></figure>
 
   <section aria-labelledby="h-estado">
     <h2 id="h-estado">Ficha</h2>
     <dl class="facts">
-      <dt>Versión</dt><dd>1.0.2</dd>
+      <dt>Versión</dt><dd>1.1.0</dd>
       <dt>Plataforma</dt><dd>Windows 11 (necesita permisos de administrador)</dd>
       <dt>Instalación</dt><dd>Un único archivo <code>CleanGuard.exe</code> (unos 50 MB, incluye el runtime de .NET): se descarga y se ejecuta, sin instalador</dd>
       <dt>Descarga</dt><dd><a href="https://github.com/JesusPalomoAlcazar/CleanGuard-releases/releases">GitHub Releases</a></dd>
-      <dt>Manual</dt><dd><a href="../manuales/CleanGuard-manual-v1.0.2.pdf">Manual de usuario v1.0.2</a> · PDF, 27 páginas, noviembre 2026</dd>
+      <dt>Manual</dt><dd><a href="../manuales/CleanGuard-manual-v1.1.0.pdf">Manual de usuario v1.1.0</a> · PDF, 37 páginas, noviembre 2026</dd>
     </dl>
     <p class="note" style="margin-top:1.2rem">El ejecutable no está firmado digitalmente, por lo que Windows puede mostrar el aviso «Windows protegió su PC». El manual explica cómo abrirlo con seguridad.</p>
   </section>
@@ -35,10 +35,11 @@
   <section aria-labelledby="h-car">
     <h2 id="h-car">Qué hace</h2>
     <ul class="list">
-      <li><b>Limpieza de archivos:</b> libera espacio borrando temporales, cachés de navegadores, papelera, restos de Windows Update, miniaturas y registros antiguos, en cinco categorías.</li>
-      <li><b>Gestor de inicio:</b> deshabilita los programas que arrancan con Windows sin desinstalarlos, y permite volver a habilitarlos.</li>
+      <li><b>Limpieza de archivos:</b> libera espacio borrando temporales, cachés de navegadores, papelera, restos de Windows Update, archivos de optimización de distribución, caché de sombreadores DirectX, informes de errores, la instalación anterior de Windows (Windows.old), miniaturas y registros antiguos.</li>
+      <li><b>Gestor de inicio:</b> deshabilita los programas que arrancan con Windows sin desinstalarlos, y permite volver a habilitarlos. Lee los mismos sitios que Configuración: claves Run del registro, carpetas Inicio y apps empaquetadas (MSIX).</li>
       <li><b>Limpiador del registro:</b> detecta entradas que apuntan a archivos o programas inexistentes, las repara en cinco categorías, guarda antes una copia <code>.reg</code> y permite deshacer.</li>
-      <li><b>Actualizaciones:</b> reúne en una página las actualizaciones pendientes de Windows Update (incluidos controladores y opcionales) y los programas que winget puede actualizar; instala solo las que marques, con el progreso de cada una y aviso si hace falta reiniciar.</li>
+      <li><b>Actualizaciones:</b> reúne en una página las actualizaciones pendientes de Windows Update (incluidos controladores y opcionales) y los programas que winget puede actualizar; instala solo las que marques, con el progreso de cada una y aviso de reinicio pendiente en la barra superior.</li>
+      <li><b>Reparación:</b> ejecuta por ti DISM, SFC y chkdsk (con «Reparar Windows» todo en uno y punto de restauración previo), reinicia Windows Update, restablece la red, libera espacio de componentes, entra en la recuperación avanzada y muestra la salud de los discos, la prueba de memoria y el informe de batería.</li>
       <li><b>Siempre con confirmación:</b> el flujo es analizar, elegir y aplicar; no borra ni instala nada sin que lo confirmes.</li>
       <li><b>Telemetría local en vivo:</b> uso de CPU, RAM y disco en la barra lateral, sin enviar datos fuera del equipo. Avisa cuando hay una versión nueva.</li>
     </ul>
@@ -53,12 +54,14 @@
   <section aria-labelledby="h-cam">
     <h2 id="h-cam">Registro de cambios</h2>
     <ol class="changelog">
+      <li><span class="ver">v1.1.0</span><span class="date">21/11/2026</span>
+        <ul class="list"><li><b>Novedad:</b> nueva página Reparación con DISM, SFC y chkdsk, «Reparar Windows» todo en uno, puntos de restauración, reinicio de Windows Update, restablecimiento de red, liberación de espacio de componentes y recuperación avanzada.</li><li><b>Novedad:</b> diagnóstico de salud de los discos, prueba de memoria e informe de batería.</li><li><b>Novedad:</b> la limpieza incluye optimización de distribución, caché de sombreadores DirectX, informes de errores, Windows.old y las copias que deja «Reiniciar Windows Update».</li><li><b>Mejora:</b> el gestor de inicio lee también las carpetas Inicio y las apps empaquetadas (MSIX).</li><li><b>Mejora:</b> aviso de reinicio pendiente en la barra superior desde cualquier pestaña, y actualizaciones opcionales y versiones preliminares de Windows.</li><li><b>Mejora:</b> manual de usuario ampliado (37 páginas).</li></ul></li>
       <li><span class="ver">v1.0.2</span><span class="date">20/11/2026</span>
         <ul class="list"><li><b>Novedad:</b> nueva herramienta Actualizaciones, que busca e instala las actualizaciones de Windows Update y de los programas gestionados por winget.</li><li><b>Novedad:</b> aviso para reiniciar el equipo cuando una actualización lo necesita (nunca reinicia sin confirmación).</li><li><b>Mejora:</b> manual de usuario ampliado (27 páginas) con la nueva herramienta y sus problemas frecuentes.</li></ul></li>
       <li><span class="ver">v1.0.1</span><span class="date">Noviembre 2026</span>
         <ul class="list"><li>Limpieza de archivos, gestor de inicio, limpiador del registro y aviso de versiones nuevas.</li></ul></li>
       <!-- Plantilla para cada versión (copiar encima del elemento anterior):
-      <li><span class="ver">v1.0.3</span><span class="date">DD/MM/AAAA</span>
+      <li><span class="ver">v1.1.1</span><span class="date">DD/MM/AAAA</span>
         <ul class="list"><li><b>Novedad:</b> ...</li><li><b>Mejora:</b> ...</li><li><b>Corrección:</b> ...</li></ul></li>
       -->
     </ol>
